@@ -36,6 +36,9 @@ app.use("/booking", bookingRoutes);
 app.use("/dolly", dollyRoutes);
 app.use("/contact", contactRoutes);
 app.use("/", blogRoutes);
+app.get("/health", (req, res) => {
+  res.status(200).send("Server is healthy!");
+});
 
 app.listen(PORT, () => {
   connectDB();
