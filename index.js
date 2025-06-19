@@ -14,8 +14,7 @@ const app = express();
 
 const allowedOrigins = [
   "https://balloon-twister-tgkk.vercel.app",
-  "https://www.balloonstwister.com/"
-
+  "https://www.balloonstwister.com"
 ];
 
 app.use(cors({
